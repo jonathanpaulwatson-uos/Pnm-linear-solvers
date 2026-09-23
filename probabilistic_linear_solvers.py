@@ -1,11 +1,33 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Nov  6 10:57:29 2025
+Probabilistic Numerical Methods for Linear Solvers
+--------------------------------------------------
 
-@author: jonathan
+MMath Mathematics Dissertation Project
+University of Southampton
+
+Author: Jonathan Watson
+
+This project investigates deterministic and probabilistic iterative
+methods for solving linear systems arising from a regression problem.
+
+Implemented methods:
+    - Richardson iteration
+    - Weighted Richardson iteration
+    - Jacobi iteration
+    - Weighted Jacobi iteration
+    - Gauss-Seidel iteration
+    - Successive Over-Relaxation (SOR)
+    - Probabilistic variants of Richardson, Jacobi and SOR
+    - Preconditioned probabilistic variants
+
+The numerical experiments compare convergence behaviour, weighting
+parameters and uncertainty propagation through the iterative methods.
+
+The Cholesky solution is used as a reference when evaluating the
+iterative solvers.
 """
-
 from sklearn.preprocessing import StandardScaler
 import seaborn as sns
 import scipy
